@@ -6,7 +6,7 @@ public class DayThree
 {
     public static void DayThreeSolution()
     {
-        var dataPath = CreatePath.GetDataPath(nameof(DayThree));
+        var dataPath = CreatePath.GetDataPath(nameof(GetType));
         var data = File.ReadAllLines(dataPath);
 
         // PartOne(data);
@@ -24,9 +24,9 @@ public class DayThree
 
     private static void PartTwo(string[] data)
     {
-        var input = data.Aggregate("", (current, input) => current + input);
-
+        var input = string.Join(' ', data);
         var result = FindMatches(input);
+
         Console.WriteLine(result);
     }
 

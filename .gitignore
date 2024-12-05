@@ -891,3 +891,4 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
+InputData/
